@@ -17,5 +17,31 @@ use Symfony\Component\Routing\Router;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+
+    $variabileSaluto = "Ciao Mondo!";
+
+    $variabileLista = ['home', '/about', '/info', '/contact'];
+
+    return view('home', ['saluto' => $variabileSaluto, 'lista' => $variabileLista],);
+
+})->name('home');
+
+Route::get('/about', function () {
+
+    return view('about');
+
+})->name('about');
+
+
+Route::get('/info', function () {
+
+    return view('info');
+
+})->name('info');
+
+
+Route::get('/contact', function () {
+
+    return view('contact');
+
+})->name('contact');

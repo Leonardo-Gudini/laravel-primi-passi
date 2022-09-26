@@ -8,7 +8,22 @@
 </head>
 <body>
 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ route('home')}}">home</a></li>
+                <li><a href="{{ route('about')}}">about</a></li>
+                <li><a href="{{ route('info')}}">info</a></li>
+                <li><a href="{{ route('contact')}}">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <h1>Hello World!</h1>
+
+    <h2>{{$saluto}}</h2>
+
+    
     
 </body>
 </html>
