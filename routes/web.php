@@ -20,7 +20,7 @@ Route::get('/', function () {
 
     $variabileSaluto = "Ciao Mondo!";
 
-    $variabileLista = ['home', '/about', '/info', '/contact'];
+    $variabileLista = ['home', 'about', 'info', 'contact'];
 
     return view('home', ['saluto' => $variabileSaluto, 'lista' => $variabileLista],);
 

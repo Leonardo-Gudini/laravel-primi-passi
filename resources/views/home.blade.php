@@ -11,10 +11,14 @@
     <header>
         <nav>
             <ul>
-                <li><a href="{{ route('home')}}">home</a></li>
+                @foreach ($lista as $elementoLista)
+                <li><a href="{{ route($elementoLista)}}">{{$elementoLista}}</a></li>
+                @endforeach
+
+                <!-- <li><a href="{{ route('home')}}">home</a></li>
                 <li><a href="{{ route('about')}}">about</a></li>
                 <li><a href="{{ route('info')}}">info</a></li>
-                <li><a href="{{ route('contact')}}">contact</a></li>
+                <li><a href="{{ route('contact')}}">contact</a></li> -->
             </ul>
         </nav>
     </header>
